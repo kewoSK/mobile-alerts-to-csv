@@ -58,7 +58,7 @@ curl -X POST -H 'Content-Type: application/x-www-form-urlencoded' -d "deviceid=$
 	do
 		[[ ${#lne} -lt 1 ]] && continue #empty line
 		DTE="`echo $lne | cut -d';' -f1`"
-		TS=`date --date "${DTE}" +%s`
+		TS=`TZ="UTC" date --date "${DTE}" +%s`
 		echo "${lne}${TS}"
 	done
 )
