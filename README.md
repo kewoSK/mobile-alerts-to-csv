@@ -18,9 +18,9 @@ Before using script, please, configure connection details according to following
 
 1. visit https://measurements.mobile-alerts.eu/
 2. enter your _phone ID_ (from _Mobile Alerts_ app) and hit *Show Sensors* button
-3. get _DEVICE_ ("MAC" format; _deviceid_ variable), VENDOR (GUID format; _vendorid_ variable) and APPBUNDLE (app handler; _appbundle_ variable) from hidden fields in page source code for desired sensors
-4. modify _mobile-alerts-to-csv-mac.sh_ script by editing variables DEVICE, VENDOR, APPBUNDLE and INTERVAL in CONFIG SECTION according to your needs
-5. add execute privilege (_chmod u+x mobile-alerts-to-csv-mac.sh_) to the script
+3. get _DEVICE_ ("MAC" format; _deviceid_ variable), _VENDOR_ (GUID format; _vendorid_ variable) and _APPBUNDLE_ (app handler; _appbundle_ variable) from hidden fields in page source code for desired sensors
+4. modify _mobile-alerts-to-csv-mac.sh_ script by editing variables _DEVICE_, _VENDOR_, _APPBUNDLE_ and _INTERVAL_ in _CONFIG SECTION_ according to your needs
+5. add execute privilege to the script (`$ chmod u+x mobile-alerts-to-csv-mac.sh`)
 
 ## Usage
 After configuration and assigning privileges, run
